@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>アクセス KUJIRA cafe</title>
+
+
+
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div>
+                <h1 id="logo"><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" width="300" height="42" alt="KUJIRA cafe"></a></h1>
+                <ul id="nav">
+                    <li><a href="{{ url_for('home') }}">ホーム</a></li>
+                    <li><a href="{{ url_for('about') }}">店舗案内</a></li>
+                    <li><a href="{{ url_for('access') }}">アクセス</a></li>
+                    <li><a href="{{ url_for('menu') }}">メニュー</a></li>
+                    <li><a href="{{ url_for('contact') }}">お問い合わせ</a></li>
+                </ul>
+            </div>
+
+
+            
+        </header>
+
+
+        <main>
+
+            <h2>KUJIRA cafeについて</h2>
+            <p class="float"><img src="{{ url_for('static', filename='images/about-photo.jpg') }}" alt="店舗写真" width="500" height="300">クジラカフェは最近オープンしたばかりのカフェです。<br>夫婦二人で作った<strong>絶品タルト</strong>や<mark>コーヒー</mark>をぜひお楽しみください。店内はゆったりとした雰囲気ですので中での作業やゆっくり団欒をしてください。<br>新作メニューのは<a href="{{ url_for('home') }}#news">News</a>から確認することが出来ます。<br>お待ちしております。</p>
+            <h2 class="clear">店舗情報</h2>
+
+            <table class="info">
+            <tr>
+                <th>住所</th>
+                <td>252-0001神奈川県(<a href="{{ url_for('access') }}">地図</a>)</td>
+            </tr>
+            <tr>
+                <th>電話番号</th>
+                <td>090909090</td>
+            </tr>
+
+            <tr>
+                <th>営業時間</th>
+                <td>10-22</td>
+            </tr>
+
+            <tr>
+                <th>ご予約</th>
+                <td>席の予約できます<br>詳しくはお電話にて、または<a href="{{ url_for('contact') }}">お問い合わせ</a>をご利用ください。</td>
+            </tr>
+
+
+            </table>
+           
+        </main>
+
+        <footer>
+            <div id="footer">
+                <p>&copy;Copyright KUJIRAcafe. All rights reserved.</p>
+            </div>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>

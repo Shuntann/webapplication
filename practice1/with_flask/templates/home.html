@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>KUJIRA CAFE ようこそ</title>
+
+
+
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div>
+                <h1 id="logo"><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" width="300" height="42" alt="KUJIRA cafe"></a></h1>
+                <ul id="nav">
+                    <li><a href="{{ url_for('home') }}">ホーム</a></li>
+                    <li><a href="{{ url_for('about') }}">店舗案内</a></li>
+                    <li><a href="{{ url_for('access') }}">アクセス</a></li>
+                    <li><a href="{{ url_for('menu') }}">メニュー</a></li>
+                    <li><a href="{{ url_for('contact') }}">お問い合わせ</a></li>
+                </ul>
+            </div>
+
+
+            
+        </header>
+
+
+        <main>
+            <div class="keyvisual">
+
+                <img src="{{ url_for('static', filename='images/keyvisual.jpg')}}" alt="" width="960" height="530">
+
+            </div>
+
+            <h2 id="news">News</h2>
+            <p class="news_item">第一ニュースです!<a href="{{ url_for('home') }}" target="_blank">詳しくはこちら</a></p>
+            <p class="news_item">第二ニュースです</p>
+
+
+            <p><a href="#logo">ロゴはこちら</a></p>
+
+        </main>
+
+        <footer>
+            <div id="footer">
+                <p>&copy;Copyright KUJIRAcafe. All rights reserved.</p>
+            </div>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>
