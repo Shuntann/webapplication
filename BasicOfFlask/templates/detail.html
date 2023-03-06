@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<h2>タイトル：{{ post.title }}</h2>
+<p>詳細：{{ post.detail }}</p>
+<p>期限：{{ post.due.date() }}</p>
+
+
+<!-- url_forの第二引数にidなどを指定できる-->
+<a href="{{ url_for('update', id=post.id) }}" role="button">update</a>
+<a href="{{ url_for('delete', id=post.id) }}"  role="button">delete</a>
+
+
+{% endblock %}
